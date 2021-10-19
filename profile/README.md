@@ -4,9 +4,7 @@
 
 
 
-
-
-# Welcome at the repo of Nelen & Schuurmans
+# Nelen & Schuurmans
 
 ## Data Driven Water Management
 
