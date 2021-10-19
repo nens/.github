@@ -1,6 +1,6 @@
 # 
 
-![logonens.svg](./assets/logo-nens.svg)
+![logonens.svg](https://raw.githubusercontent.com/nens/.github/main/profile/assets/logo-nens.svg)
 
 
 
