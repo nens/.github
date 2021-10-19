@@ -2,9 +2,7 @@
 
 ![logonens.svg](https://raw.githubusercontent.com/nens/.github/main/profile/assets/logo-nens.svg)
 
-
-
-# Nelen & Schuurmans
+Delte
 
 ## Data Driven Water Management
 
