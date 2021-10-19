@@ -2,7 +2,6 @@
 
 ![logonens.svg](https://raw.githubusercontent.com/nens/.github/main/profile/assets/logo-nens.svg)
 
-Delte
 
 ## Data Driven Water Management
 
