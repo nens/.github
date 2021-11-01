@@ -116,7 +116,7 @@ body:
     id: extra-info
     attributes:
       label: Additional info
-      description: Anything else?
+      description: Any information that can help us solve the issue
       placeholder: Additional info
       value: |
         Anything else you would like to share?
