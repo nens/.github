@@ -17,6 +17,14 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
+  - type: input
+    id: topdesk-url
+    attributes:
+      label: Topdesk URL (API)
+      description: Direct URL to the topdesk ticket
+      placeholder: https://nelen-schuurmans.topdesk.net/tas/secure/contained/incident?unid=...
+    validations:
+      required: false
   - type: dropdown
     id: Incident-Type
     attributes:
@@ -104,3 +112,13 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+  - type: textarea
+    id: extra-info
+    attributes:
+      label: Additional info
+      description: Anything else?
+      placeholder: Additional info
+      value: |
+        Anything else you would like to share?
+    validations:
+      required: false
