@@ -8,7 +8,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        This report is designed for developers most fields are optional.
+        Please make sure that someone can pickup this issue by assigning it.
   - type: input
     id: contact
     attributes:
