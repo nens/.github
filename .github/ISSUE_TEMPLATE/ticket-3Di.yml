@@ -17,91 +17,90 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-- type: dropdown
-  id: Incident Type
-  attributes:
-    label: Incident Type
-    description: What kind of incident do you want to submit?
-    options:
-      - Bug (Default)
-      - Feature request
-      - General
-  validations:
+  - type: dropdown
+    id: Incident Type
+    attributes:
+      label: Incident Type
+      description: What kind of incident do you want to submit?
+      options:
+        - Bug (Default)
+        - Feature request
+        - General
+    validations:
+        required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: What priority should we assign to this submission?
+      options:
+        - To be determined (Default)
+        - Prio1 Very Urgent
+        - Prio2 Urgent
+        - Prio3 Not urgent
+        - Prio4 Long-term
+  - type: dropdown
+    id: 3Di-Component
+    attributes:
+      label: 3Di component
+      description: Which 3Di component is affected by this issue
+      options:
+        - API - v1
+        - API - v3 (Default)
+        - Livesite
+        - Model database
+        - Modeller Interface (QGIS)
+        - Model repositories / inpy
+        - Results in Lizard
+        - Contract & Accounts
+        - Other or General
+    validations:
       required: true
-- type: dropdown
-  id: priority
-  attributes:
-    label: What priority should we assign to this submission?
-    options:
-    |
-      - To be determined (Default)
-      - Prio1: Very Urgent
-      - Prio2: Urgent
-      - Prio3: Not urgent
-      - Prio4: Long-term
-- type: dropdown
-  id: 3Di-Component
-  attributes:
-    label: 3Di component
-    description: Which 3Di component is affected by this issue
-    options:
-      - API - v1
-      - API - v3 (Default)
-      - Livesite
-      - Model database
-      - Modeller Interface (QGIS)
-      - Model repositories / inpy
-      - Results in Lizard
-      - Contract & Accounts
-      - Other or General
-  validations:
-    required: true
-- type: textarea
-  id: what-happened
-  attributes:
-    label: What happened?
-    description: Also tell us, what did you expect to happen?
-    placeholder: Tell us what you see!
-    value: "I typed 1 + 1, expected 2 but the calculator returned 3"
-  validations:
-    required: true
-- type: textarea
-  id: how-to-reproduce
-  attributes:
-    label: How to Reproduce?
-    description: What steps do we need to take to reproduce this issue
-    placeholder: Be foolproof, we are developers not users
-    value: |
-      Open calculater.
-      Press 1,
-      Press +,
-      Press 1,
-      Press =
-  validations:
-    required: true
-- type: textarea
-  id: expected and actual result
-  attributes:
-    label: What did you expect and what was the actual result?
-    description: Use exact figures if possible
-    placeholder: I expected 2 but the result was 3
-    value: |
-      I expected 2 but the calculator returned 3
-  validations:
-    required: true
-- type: textarea
-  id: screenshots
-  attributes:
-    label: Add screenshots, video's etc
-    description: Be creative!
-    placeholder: Show us what you see!
-    value: |
-      The maximum size for files is 25MB and the maximum size for images is 10MB.
-  validations:
-    required: false
-- type: textarea
-  id: logs
-  attributes:
-    label: Relevant log output
-    description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-    render: shell
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "I typed 1 + 1, expected 2 but the calculator returned 3"
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: How to Reproduce?
+      description: What steps do we need to take to reproduce this issue
+      placeholder: Be foolproof, we are developers not users
+      value: |
+        Open calculater.
+        Press 1,
+        Press +,
+        Press 1,
+        Press =
+    validations:
+      required: true
+  - type: textarea
+    id: expected and actual result
+    attributes:
+      label: What did you expect and what was the actual result?
+      description: Use exact figures if possible
+      placeholder: I expected 2 but the result was 3
+      value: |
+        I expected 2 but the calculator returned 3
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Add screenshots, video's etc
+      description: Be creative!
+      placeholder: Show us what you see!
+      value: |
+        The maximum size for files is 25MB and the maximum size for images is 10MB.
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
