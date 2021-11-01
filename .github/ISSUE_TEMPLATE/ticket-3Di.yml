@@ -18,17 +18,7 @@ body:
     validations:
       required: false
   - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: Incident Type
+    id: Incident-Type
     attributes:
       label: Incident Type
       description: What kind of incident do you want to submit?
@@ -89,7 +79,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: expected and actual result
+    id: expected-and-actual-result
     attributes:
       label: What did you expect and what was the actual result?
       description: Use exact figures if possible
