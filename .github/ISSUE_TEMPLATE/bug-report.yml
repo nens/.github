@@ -17,46 +17,85 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
+  - type: dropdown
+    id: Complexity
+    attributes:
+      label: Complexity
+      description: How complex is this issue
+      options:
+        - easy
+        - moderate
+        - complex
+    validations:
+      required: true
+  - type: dropdown
+    id: Priority
+    attributes:
+      label: Priority
+      description: What is the priority for a fix
+      options:
+        - low prio
+        - medium prio
+        - high prio
+        - urgent (Immediately)
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "I typed 1 + 1, expected 2 but the calculator returned 3"
     validations:
-      required: true
-  - type: dropdown
-    id: version
+      required: false
+  - type: textarea
+    id: how-to-reproduce
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: How to Reproduce?
+      description: What steps do we need to take to reproduce this issue
+      placeholder: Be foolproof, we are developers not users
+      value: |
+        Open calculater.
+        Press 1,
+        Press +,
+        Press 1,
+        Press =
     validations:
-      required: true
-  - type: dropdown
-    id: browsers
+      required: false
+  - type: textarea
+    id: expected-and-actual-result
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      label: What did you expect and what was the actual result?
+      description: Use exact figures if possible
+      placeholder: I expected 2 but the result was 3
+      value: |
+        I expected 2 but the calculator returned 3
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Add screenshots, video's etc
+      description: Be creative!
+      placeholder: Show us what you see!
+      value: |
+        The maximum size for files is 25MB and the maximum size for images is 10MB.
+    validations:
+      required: false
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
-  - type: checkboxes
-    id: terms
+  - type: textarea
+    id: extra-info
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Additional info
+      description: Any information that can help us solve the issue
+      placeholder: Additional info
+      value: |
+        Anything else you would like to share?
+    validations:
+      required: false
