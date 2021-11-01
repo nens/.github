@@ -1,9 +1,9 @@
-name: Ticket for 3Di
-description: Create a new ticket for 3Di
-title: "[3Di]: "
+name: Ticket for Lizard
+description: Create a new ticket for Lizard
+title: "[Lizard]: "
 labels: [bug]
 assignees:
-  - Patrick-Nijman
+  - lexvand
 body:
   - type: markdown
     attributes:
@@ -37,7 +37,7 @@ body:
         - Announcement
         - Feedback
     validations:
-        required: true
+      required: true
   - type: dropdown
     id: priority
     attributes:
@@ -54,14 +54,18 @@ body:
       label: 3Di component
       description: Which 3Di component is affected by this issue
       options:
-        - API - v1
-        - API - v3 (Default)
-        - Livesite
-        - Model database
-        - Modeller Interface (QGIS)
-        - Model repositories / inpy
-        - Results in Lizard
-        - Contract & Accounts
+        - Accounts and rights (Default)
+        - API
+        - Catalogue
+        - Dashboard
+        - FTP Importer
+        - Management screens
+        - Viewer
+        - Powered by Lizard Bluelabel
+        - Powered by Lizard DDSC
+        - Powered by Lizard FLASH
+        - Powered by Lizard Hittestress
+        - Powered by Lizard Klimaatatlas
         - Other or General
     validations:
       required: true
