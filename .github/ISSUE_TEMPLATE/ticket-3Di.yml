@@ -1,7 +1,7 @@
 name: Ticket for 3Di
 description: Create a new ticket for 3Di
 title: "[3Di]: "
-labels: []
+labels: [bug]
 assignees:
   - Patrick-Nijman
 body:
@@ -33,6 +33,7 @@ body:
   attributes:
     label: What priority should we assign to this submission?
     options:
+    |
       - To be determined (Default)
       - Prio1: Very Urgent
       - Prio2: Urgent
