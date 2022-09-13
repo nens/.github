@@ -33,6 +33,7 @@ body:
       options:
         - Question (Default)
         - Error
+        - Feature Request
         - Wish
         - Announcement
         - Feedback
@@ -97,7 +98,7 @@ body:
       value: |
         I expected 2 but the calculator returned 3
     validations:
-      required: true
+      required: false
   - type: textarea
     id: screenshots
     attributes:
