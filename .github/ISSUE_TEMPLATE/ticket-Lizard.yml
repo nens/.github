@@ -34,6 +34,7 @@ body:
         - Question (Default)
         - Error
         - Wish
+        - Feature Request
         - Announcement
         - Feedback
     validations:
@@ -49,9 +50,9 @@ body:
         - Prio3 Not urgent
         - Prio4 Long-term
   - type: dropdown
-    id: 3Di-Component
+    id: Lizard-Component
     attributes:
-      label: 3Di component
+      label: Lizard component
       description: Which 3Di component is affected by this issue
       options:
         - Accounts and rights (Default)
@@ -101,7 +102,7 @@ body:
       value: |
         I expected 2 but the calculator returned 3
     validations:
-      required: true
+      required: false
   - type: textarea
     id: screenshots
     attributes:
