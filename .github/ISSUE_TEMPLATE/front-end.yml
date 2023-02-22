@@ -1,5 +1,5 @@
 name: Front-End request template
-description: File a Front-End request. An appropriate label (Front-End) will be added. This label should already be present Otherwise create it manually. Also specify the Product name so we know what product is involved.
+description: File a Front-End request. An appropriate label (Front-End) will be added. This label should already be present. If not create it manually so it will exist next time.
 title: "[Product name]: "
 labels: ["Front-End"]
 assignees:
