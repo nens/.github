@@ -37,7 +37,7 @@ body:
     id: what-needs-to-be-done
     attributes:
       label: What Needs to be Done?
-      description: Please be as detailed as possible. We like images!?
+      description: Please be as detailed as possible. We like images and creativity!
       placeholder: Tell us what you you want!
       value: "I need a specific button to click and do awesome stuff"
     validations:
