@@ -1,0 +1,52 @@
+name: Front-End request template
+description: File a Front-End request. This will make sure an appropriate label will be added so it will appear on the Front-End workspace. please specify the Produc name so we know what product is involved
+title: "[Product name]: "
+labels: ["Front-End"]
+assignees:
+  - remcogerlich
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This report is designed for developers most fields are optional.
+        Please make sure that someone can pickup this issue by assigning it.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: dropdown
+    id: Complexity
+    attributes:
+      label: Complexity
+      description: How complex is this issue
+      options:
+        - easy
+        - moderate
+        - complex
+    validations:
+      required: true
+  - type: dropdown
+    id: Priority
+    attributes:
+      label: Priority
+      description: What is the priority for a fix
+      options:
+        - low prio
+        - medium prio
+        - high prio
+        - urgent (Immediately)
+    validations:
+      required: true
+  - type: textarea
+    id: what-needs-to-be-done
+    attributes:
+      label: What Needs to be Done?
+      description: Please be as detailed as possible. We like images!?
+      placeholder: Tell us what you you want!
+      value: "I need a specific button to click and do awesome stuff"
+    validations:
+      required: false
