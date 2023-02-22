@@ -1,5 +1,5 @@
 name: Front-End request template
-description: File a Front-End request. This will make sure an appropriate label will be added so it will appear on the Front-End workspace. please specify the Produc name so we know what product is involved
+description: File a Front-End request. This will make sure an appropriate label (Front-End) will be added if it exists so it will appear on the Front-End workspace. Please make sure the label is added because it should exist in the repository first. Also specify the Product name so we know what product is involved.
 title: "[Product name]: "
 labels: ["Front-End"]
 assignees:
@@ -10,14 +10,6 @@ body:
       value: |
         This report is designed for developers most fields are optional.
         Please make sure that someone can pickup this issue by assigning it.
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
   - type: dropdown
     id: Complexity
     attributes:
