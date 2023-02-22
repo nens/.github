@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         This report is designed for developers most fields are optional.
-        Please make sure that someone can pickup this issue by assigning it.
+        It will add a label so Zenhub will show it in the Front-End Worksapce. If the label is not present yet you need to manually create it. So please check if the label is applied otherwise the Front-End department will not notice it. Unfortunately it's not easy to create a label in each repo we use...
   - type: dropdown
     id: Complexity
     attributes:
