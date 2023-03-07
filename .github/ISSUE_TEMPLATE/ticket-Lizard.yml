@@ -1,7 +1,6 @@
 name: Ticket for Lizard
 description: Create a new ticket for Lizard
 title: "[Lizard]: "
-labels: [bug]
 assignees:
   - lexvand
 body:
