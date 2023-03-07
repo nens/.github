@@ -1,7 +1,6 @@
 name: Ticket for 3Di
 description: Create a new ticket for 3Di
 title: "[3Di]: "
-labels: ""
 assignees:
   - Patrick-Nijman
 body:
